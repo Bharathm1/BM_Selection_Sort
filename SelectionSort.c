@@ -14,21 +14,19 @@ int main(){
    // Loop to get the elements stored in array
    for(i=0;i<count;i++)
       scanf("%d",&number[i]);
+   printf("\n How Selection Sort Works \n ");
 
    // Logic of selection sort algorithm
    for(i=0;i<count;i++){
+      printf("\n");
       for(j=i+1;j<count;j++){
          if(number[i]>number[j]){
             temp=number[i];
             number[i]=number[j];
             number[j]=temp;
          }
+         printf("%d",&number[i]); 
       }
    }
-
-   printf("Sorted elements: ");
-   for(i=0;i<count;i++)
-      printf(" %d",number[i]);
-
    return 0;
 }
